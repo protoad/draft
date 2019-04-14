@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
+    "local-install": "npm link",
+    "start": "node index.js",
     "test": "npx mocha test/**/*.spec.js"
   },
-  "author": "",
+  "bin": {
+    "draft": "./index.js"
+  },
+  "author": "Michael Rubanov<mrubanov@gmail.com>",
   "license": "ISC",
   "keywords": [],
   "description": "",
@@ -23,8 +28,13 @@
     "should": "^13.2.3"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
     "debug": "^4.1.1",
     "dotenv": "^7.0.0",
-    "fs-walk": "0.0.2"
+    "figlet": "^1.2.1",
+    "fs-walk": "0.0.2",
+    "inquirer": "^6.3.1",
+    "rambda": "^2.4.1",
+    "shelljs": "^0.8.3"
   }
 }
